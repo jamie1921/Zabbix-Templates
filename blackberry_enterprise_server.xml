@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export version="1.0" date="13.10.11" time="14.31">
+	<hosts>
+		<host name="Blackberry Enterprise Server">
+			<proxy_hostid>0</proxy_hostid>
+			<useip>1</useip>
+			<dns></dns>
+			<ip>127.0.0.1</ip>
+			<port>10050</port>
+			<status>3</status>
+			<useipmi>0</useipmi>
+			<ipmi_ip>127.0.0.1</ipmi_ip>
+			<ipmi_port>623</ipmi_port>
+			<ipmi_authtype>0</ipmi_authtype>
+			<ipmi_privilege>2</ipmi_privilege>
+			<ipmi_username></ipmi_username>
+			<ipmi_password></ipmi_password>
+			<groups>
+				<group>Templates</group>
+			</groups>
+			<triggers>
+				<trigger>
+					<description>BlackBerry Administration Service - Application Server service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BAS-AS"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry Administration Service - Native Code Container (BAS-NCC) service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BAS-NCC"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry Attachment Service (BBAttachServer) service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BBAttachServer"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry Controller (BlackBerry Controller) service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BlackBerry Controller"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry Dispatcher (BlackBerry Dispatcher) service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BlackBerry Dispatcher"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry Mail Store Service (BlackBerry Mail Store Service) service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BlackBerry Mail Store Service"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry MDS Connection Service (BlackBerry MDS Connection Service) service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BlackBerry MDS Connection Service"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry Policy Service (BlackBerry Policy Service)</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BlackBerry Policy Service"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry Alert (BlackBerry Server Alert) service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BlackBerry Server Alert"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+				<trigger>
+					<description>BlackBerry Synchronization Service (BlackBerry SyncServer) service not running.</description>
+					<type>0</type>
+					<expression>{Blackberry Enterprise Server:service_state["BlackBerry SyncServer"].last(0)}#0</expression>
+					<url></url>
+					<status>0</status>
+					<priority>4</priority>
+					<comments></comments>
+				</trigger>
+			</triggers>
+			<items>
+				<item type="0" key="service_state[&quot;BAS-AS&quot;]" value_type="3">
+					<description>Service state of  BlackBerry Administration Service - Application Server ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BAS-NCC&quot;]" value_type="3">
+					<description>Service state of BlackBerry Administration Service - Native Code Container ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BBAttachServer&quot;]" value_type="3">
+					<description>Service state of BlackBerry Attachment Service ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BlackBerry Controller&quot;]" value_type="3">
+					<description>Service state of BlackBerry Controller ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BlackBerry Dispatcher&quot;]" value_type="3">
+					<description>Service state of BlackBerry Dispatcher ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BlackBerry Mail Store Service&quot;]" value_type="3">
+					<description>Service state of BlackBerry Mail Store Service ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BlackBerry MDS Connection Service&quot;]" value_type="3">
+					<description>Service state of BlackBerry MDS Connection Service ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BlackBerry Policy Service&quot;]" value_type="3">
+					<description>Service state of BlackBerry Policy Service ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BlackBerry Server Alert&quot;]" value_type="3">
+					<description>Service state of BlackBerry Alert ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+				<item type="0" key="service_state[&quot;BlackBerry SyncServer&quot;]" value_type="3">
+					<description>Service state of BlackBerry Synchronization Service ($1)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<data_type>0</data_type>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<authtype>0</authtype>
+					<username></username>
+					<password></password>
+					<publickey></publickey>
+					<privatekey></privatekey>
+					<params></params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>BlackBerry Enterprise Server</application>
+					</applications>
+				</item>
+			</items>
+			<templates/>
+			<graphs/>
+			<macros/>
+		</host>
+	</hosts>
+	<dependencies/>
+</zabbix_export>
